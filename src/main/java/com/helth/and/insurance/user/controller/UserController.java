@@ -43,5 +43,11 @@ public class UserController {
 		model.addAttribute("formbinding", formbinding);
 		return "index";
 	}
-
+	@GetMapping("/login")
+	public String loginPage() {
+		return"login";
+	}
+public String loadDashBoard() {
+	return"dsahboard";
+}
 }
